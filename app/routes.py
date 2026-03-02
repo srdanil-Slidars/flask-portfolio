@@ -41,3 +41,4 @@ def contact():
     Страница контактов.
     """
     return render_template("contact.html")
+
