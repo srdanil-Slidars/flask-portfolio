@@ -1,0 +1,352 @@
+{% extends "base.html" %}
+
+{% block title %}Главная | Flask Portfolio{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero__background">
+        <div class="hero__glow hero__glow--one"></div>
+        <div class="hero__glow hero__glow--two"></div>
+        <div class="hero__grid"></div>
+    </div>
+
+    <div class="container hero__layout">
+        <div class="hero__content">
+            <p class="hero__subtitle">Премиальное digital-портфолио</p>
+
+            <h1 class="hero__title">
+                Создаю сайты,<br>
+                интерфейсы и проекты<br>
+                с сильной детализацией<br>
+            </h1>
+
+            <p class="hero__description">
+                Продуманный дизайн, аккуратная архитектура и внимание к деталям.
+                Я создаю проекты, которые выглядят сильно, ощущаются дорого
+                и запоминаются с первого экрана.
+            </p>
+
+            <div class="hero__actions">
+                <a href="{{ url_for('main.projects') }}" class="btn btn--primary">Смотреть проекты</a>
+                <a href="{{ url_for('main.contact') }}" class="btn btn--secondary">Связаться</a>
+            </div>
+        </div>
+
+        <div class="hero__panel">
+            <div class="hero-card">
+                <div class="hero-card__label">Сейчас в разработке</div>
+                <h2 class="hero-card__title">Premium Portfolio Experience</h2>
+                <p class="hero-card__text">
+                    Готовим выразительный рекламный стиль:
+                    плавные переходы, сильная типографика,
+                    анимации, глубина, свет и идеальная подача.
+                </p>
+
+                <div class="hero-card__stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat__value">01</span>
+                        <span class="hero-stat__label">Сильный визуал</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat__value">02</span>
+                        <span class="hero-stat__label">Плавные анимации</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat__value">03</span>
+                        <span class="hero-stat__label">Премиум-подача</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-preview reveal-on-scroll">
+    <div class="container about-preview__layout">
+        <div class="about-preview__content">
+            <p class="section-kicker">Обо мне</p>
+
+            <h2 class="section-title">
+                Молодой разработчик,
+                который превращает идеи
+                в современные digital-решения
+            </h2>
+
+            <p class="about-preview__text">
+                Меня зовут <strong>Данил Садыков</strong>, мне 17 лет, и я занимаюсь
+                программированием с раннего возраста. С 13 лет я начал серьёзно
+                погружаться в разработку и с тех пор успел пройти путь от первых
+                самостоятельных проектов до реальных практических задач:
+                стажировка у Python-разработчика, Telegram-боты, автоматизация,
+                фриланс-заказы и проекты с ИИ и компьютерным зрением.
+            </p>
+
+            <p class="about-preview__text">
+                Мне нравится не просто писать код, а собирать из идей рабочие
+                решения — удобные, умные и современные. Я люблю пробовать новое,
+                быстро учусь и постоянно развиваюсь. Сейчас мой основной интерес —
+                создание сильных digital-проектов, в которых сочетаются технологии,
+                логика, визуал и внимание к деталям.
+            </p>
+
+            <div class="about-preview__meta">
+                <span class="about-chip">Python</span>
+                <span class="about-chip">Telegram Bots</span>
+                <span class="about-chip">Automation</span>
+                <span class="about-chip">AI / CV</span>
+                <span class="about-chip">B1 English</span>
+            </div>
+        </div>
+
+        <div class="about-preview__cards">
+            <div class="about-feature-card">
+                <span class="about-feature-card__number">01</span>
+                <h3 class="about-feature-card__title">Практический опыт</h3>
+                <p class="about-feature-card__text">
+                    Стажировка, реальные задачи, боты, автоматизация и первые
+                    фриланс-проекты — не только теория, но и практика.
+                </p>
+            </div>
+
+            <div class="about-feature-card">
+                <span class="about-feature-card__number">02</span>
+                <h3 class="about-feature-card__title">Быстрый рост</h3>
+                <p class="about-feature-card__text">
+                    Ранний старт в программировании, постоянное обучение и
+                    стремление расти в сторону сильной профессиональной разработки.
+                </p>
+            </div>
+
+            <div class="about-feature-card">
+                <span class="about-feature-card__number">03</span>
+                <h3 class="about-feature-card__title">Современный подход</h3>
+                <p class="about-feature-card__text">
+                    Интерес к AI, computer vision, цифровым продуктам, визуалу и
+                    качеству конечного результата.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured-projects reveal-on-scroll">
+    <div class="container">
+        <div class="featured-projects__head">
+            <div>
+                <p class="section-kicker">Избранные направления</p>
+                <h2 class="section-title">
+                    Проекты и направления,
+                    в которых я уже развиваюсь
+                </h2>
+            </div>
+
+            <p class="featured-projects__intro">
+                Здесь собраны ключевые направления, с которыми я уже работал:
+                от Telegram-ботов и автоматизации до решений с элементами
+                искусственного интеллекта и компьютерного зрения.
+            </p>
+        </div>
+
+        <div class="featured-projects__grid">
+            <article class="project-card">
+                <div class="project-card__badge">01</div>
+                <h3 class="project-card__title">Telegram-боты</h3>
+                <p class="project-card__text">
+                    Разработка Telegram-ботов для автоматизации задач,
+                    взаимодействия с пользователями, логики команд,
+                    уведомлений и удобных сценариев работы.
+                </p>
+                <div class="project-card__tags">
+                    <span>Python</span>
+                    <span>Bot API</span>
+                    <span>Automation</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card__badge">02</div>
+                <h3 class="project-card__title">Автоматизация</h3>
+                <p class="project-card__text">
+                    Создание решений, которые упрощают рутинные процессы,
+                    экономят время и помогают превращать повторяющиеся действия
+                    в удобные цифровые инструменты.
+                </p>
+                <div class="project-card__tags">
+                    <span>Scripts</span>
+                    <span>Workflows</span>
+                    <span>Efficiency</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card__badge">03</div>
+                <h3 class="project-card__title">AI / Computer Vision</h3>
+                <p class="project-card__text">
+                    Работа с более сложными проектами, где используются
+                    элементы искусственного интеллекта, обработка данных
+                    и задачи, связанные с компьютерным зрением.
+                </p>
+                <div class="project-card__tags">
+                    <span>AI</span>
+                    <span>CV</span>
+                    <span>Smart Systems</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="skills-preview reveal-on-scroll">
+    <div class="container skills-preview__layout">
+        <div class="skills-preview__content">
+            <p class="section-kicker">Навыки</p>
+
+            <h2 class="section-title">
+                Технологии и направления,
+                с которыми я уже работаю
+            </h2>
+
+            <p class="skills-preview__text">
+                Мой основной фокус — Python-разработка, автоматизация и создание
+                цифровых решений. Также в своих проектах я использовал HTML, CSS,
+                Java и подходы, связанные с AI и computer vision.
+            </p>
+
+            <div class="skills-stack">
+                <div class="skill-pill">Python</div>
+                <div class="skill-pill">Telegram Bot API</div>
+                <div class="skill-pill">Automation</div>
+                <div class="skill-pill">HTML</div>
+                <div class="skill-pill">CSS</div>
+                <div class="skill-pill">Java</div>
+                <div class="skill-pill">AI</div>
+                <div class="skill-pill">Computer Vision</div>
+                <div class="skill-pill">Problem Solving</div>
+                <div class="skill-pill">Fast Learning</div>
+            </div>
+        </div>
+
+        <div class="skills-preview__cards">
+            <div class="skill-info-card">
+                <div class="skill-info-card__label">Основной вектор</div>
+                <h3 class="skill-info-card__title">Python & Automation</h3>
+                <p class="skill-info-card__text">
+                    Главная технологическая база — Python и практические задачи,
+                    связанные с ботами, автоматизацией и созданием удобных
+                    цифровых инструментов.
+                </p>
+            </div>
+
+            <div class="skill-info-card">
+                <div class="skill-info-card__label">Дополнительный опыт</div>
+                <h3 class="skill-info-card__title">Web & Logic</h3>
+                <p class="skill-info-card__text">
+                    В проектах также использовались HTML, CSS и Java, что даёт
+                    понимание структуры интерфейсов, логики приложений и общей
+                    архитектуры решений.
+                </p>
+            </div>
+
+            <div class="skill-info-card">
+                <div class="skill-info-card__label">Интерес к росту</div>
+                <h3 class="skill-info-card__title">AI & Modern Tech</h3>
+                <p class="skill-info-card__text">
+                    Мне особенно интересны современные направления: искусственный
+                    интеллект, computer vision и развитие в сторону более сильных
+                    и технологичных проектов.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-me reveal-on-scroll">
+    <div class="container">
+        <div class="why-me__head">
+            <div>
+                <p class="section-kicker">Почему именно я</p>
+                <h2 class="section-title">
+                    Не просто изучаю код,
+                    а уже умею превращать
+                    технологии в рабочие решения
+                </h2>
+            </div>
+
+            <p class="why-me__intro">
+                Я развиваюсь не только как начинающий разработчик, но и как человек,
+                который умеет быстро разбираться в новых инструментах, собирать
+                рабочие решения и доводить идею до результата.
+            </p>
+        </div>
+
+        <div class="why-me__grid">
+            <article class="why-card">
+                <div class="why-card__number">01</div>
+                <h3 class="why-card__title">Практический подход</h3>
+                <p class="why-card__text">
+                    Для меня программирование — это не только обучение, а реальная
+                    практика: стажировка, фриланс, боты, автоматизация и работа
+                    над прикладными задачами.
+                </p>
+            </article>
+
+            <article class="why-card">
+                <div class="why-card__number">02</div>
+                <h3 class="why-card__title">Быстрое освоение технологий</h3>
+                <p class="why-card__text">
+                    Я быстро вникаю в новые инструменты и умею адаптироваться под
+                    задачу. Это помогает мне расти быстрее и увереннее двигаться
+                    в сторону сильной разработки.
+                </p>
+            </article>
+
+            <article class="why-card">
+                <div class="why-card__number">03</div>
+                <h3 class="why-card__title">Уверенная работа с нейросетями</h3>
+                <p class="why-card__text">
+                    Я хорошо ориентируюсь в популярных нейросетях, умею использовать
+                    их в работе и внедрять AI-инструменты в код, чтобы ускорять
+                    разработку, автоматизировать процессы и усиливать проекты.
+                </p>
+            </article>
+
+            <article class="why-card">
+                <div class="why-card__number">04</div>
+                <h3 class="why-card__title">Фокус на результате</h3>
+                <p class="why-card__text">
+                    Мне важно не просто написать код, а сделать решение, которое
+                    выглядит современно, работает стабильно и действительно приносит
+                    пользу в реальной задаче.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+<section class="home-cta reveal-on-scroll">
+    <div class="container">
+        <div class="home-cta__card">
+            <div class="home-cta__content">
+                <p class="section-kicker">Готов к сотрудничеству</p>
+
+                <h2 class="section-title">
+                    Открыт для интересных задач,
+                    новых проектов и сильного роста
+                </h2>
+
+                <p class="home-cta__text">
+                    Если тебе нужен мотивированный разработчик для Telegram-бота,
+                    автоматизации, AI-интеграции или современного digital-решения —
+                    можно связаться со мной и обсудить идею напрямую.
+                </p>
+            </div>
+
+            <div class="home-cta__actions">
+                <a href="{{ url_for('main.contact') }}" class="btn btn--primary">Связаться со мной</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

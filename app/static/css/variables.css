@@ -1,0 +1,22 @@
+:root {
+    --bg-color: #0b0f19;
+    --bg-secondary: #11182a;
+    --text-color: #f5f7ff;
+    --muted-text: #9aa4c7;
+
+    --accent: #6ea8fe;
+    --accent-hover: #8db9ff;
+
+    --border-color: rgba(255, 255, 255, 0.08);
+
+    --container-width: 1200px;
+
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+
+    --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.25);
+
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.35s ease;
+}

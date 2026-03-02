@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+
+{% block title %}Обо мне | Flask Portfolio{% endblock %}
+
+{% block content %}
+<section class="about-hero reveal-on-scroll">
+    <div class="about-hero__background">
+        <div class="about-hero__glow about-hero__glow--one"></div>
+        <div class="about-hero__glow about-hero__glow--two"></div>
+    </div>
+
+    <div class="container about-hero__layout">
+        <div class="about-hero__content">
+            <p class="section-kicker">Обо мне</p>
+
+            <h1 class="section-title">
+                Данил Садыков —
+                разработчик, который
+                превращает идеи в
+                современные digital-решения
+            </h1>
+
+            <p class="about-hero__text">
+                Мне 17 лет, живу в Казахстане. Я начал программировать ещё в 13 и с тех пор
+                постоянно прокачиваю навыки на практике: Telegram-боты, автоматизация,
+                небольшие фриланс-задачи и проекты с AI/Computer Vision.
+                Уверенно работаю с популярными нейросетями и умею внедрять AI-инструменты в код —
+                у меня «набита рука» на быстрые прототипы и рабочие интеграции.
+            </p>
+
+            <div class="about-hero__chips">
+                <span class="about-chip">Python</span>
+                <span class="about-chip">Telegram Bots</span>
+                <span class="about-chip">Automation</span>
+                <span class="about-chip">AI Integration</span>
+                <span class="about-chip">Computer Vision</span>
+            </div>
+
+            <div class="about-hero__actions">
+                <a href="{{ url_for('main.projects') }}" class="btn btn--primary">Посмотреть направления</a>
+                <a href="{{ url_for('main.contact') }}" class="btn btn--ghost">Связаться</a>
+            </div>
+        </div>
+
+        <div class="about-hero__panel">
+            <div class="about-profile-card">
+                <div class="about-profile-card__top">
+                    <div class="about-profile-card__avatar">
+                        <span>DS</span>
+                    </div>
+                    <div class="about-profile-card__meta">
+                        <div class="about-profile-card__name">Danil Sadykov</div>
+                        <div class="about-profile-card__role">Python Developer • Automation • AI</div>
+                    </div>
+                </div>
+
+                <div class="about-profile-card__facts">
+                    <div class="about-fact">
+                        <span class="about-fact__label">Возраст</span>
+                        <span class="about-fact__value">17</span>
+                    </div>
+                    <div class="about-fact">
+                        <span class="about-fact__label">Локация</span>
+                        <span class="about-fact__value">Kazakhstan</span>
+                    </div>
+                    <div class="about-fact">
+                        <span class="about-fact__label">Уровень EN</span>
+                        <span class="about-fact__value">B1</span>
+                    </div>
+                </div>
+
+                <div class="about-profile-card__note">
+                    Фокус: практичные решения, чистая логика, аккуратный UI и эффект “вау”.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-story reveal-on-scroll">
+    <div class="container">
+        <div class="about-story__head">
+            <div>
+                <p class="section-kicker">История</p>
+                <h2 class="section-title">Как я развивался</h2>
+            </div>
+
+            <p class="about-story__intro">
+                Я люблю рост через практику: делаю, тестирую, улучшаю и довожу до результата.
+                Мне важны и “под капотом” (архитектура), и ощущение продукта (дизайн/анимации).
+            </p>
+        </div>
+
+        <div class="about-timeline">
+            <div class="timeline-item">
+                <div class="timeline-item__dot"></div>
+                <div class="timeline-item__content">
+                    <h3>13 лет — старт</h3>
+                    <p>Серьёзно погрузился в программирование и начал собирать первые проекты.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-item__dot"></div>
+                <div class="timeline-item__content">
+                    <h3>Практика и стажировка</h3>
+                    <p>Получил опыт работы рядом с Python-разработчиком, увидел, как делаются реальные задачи.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-item__dot"></div>
+                <div class="timeline-item__content">
+                    <h3>Фриланс и проекты</h3>
+                    <p>Брал небольшие задачи (например, на Хабр Фриланс), делал Telegram-ботов и автоматизацию.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-item__dot"></div>
+                <div class="timeline-item__content">
+                    <h3>AI и Computer Vision</h3>
+                    <p>Развиваю направление AI: использую нейросети и внедряю их в код под конкретные задачи.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-strengths reveal-on-scroll">
+    <div class="container">
+        <div class="about-strengths__head">
+            <div>
+                <p class="section-kicker">Сильные стороны</p>
+                <h2 class="section-title">Как я работаю</h2>
+            </div>
+        </div>
+
+        <div class="about-strengths__grid">
+            <article class="strength-card">
+                <div class="strength-card__num">01</div>
+                <h3 class="strength-card__title">Быстрый прототип</h3>
+                <p class="strength-card__text">
+                    Умею быстро собрать MVP и проверить идею на практике — без лишней сложности.
+                </p>
+            </article>
+
+            <article class="strength-card">
+                <div class="strength-card__num">02</div>
+                <h3 class="strength-card__title">AI-интеграции</h3>
+                <p class="strength-card__text">
+                    Уверенно пользуюсь популярными нейросетями и внедряю AI-инструменты в проекты:
+                    автоматизация, генерация, обработка данных, CV-задачи.
+                </p>
+            </article>
+
+            <article class="strength-card">
+                <div class="strength-card__num">03</div>
+                <h3 class="strength-card__title">Чистая логика</h3>
+                <p class="strength-card__text">
+                    Люблю понятную структуру: чтобы код читался, расширялся и не ломался от правок.
+                </p>
+            </article>
+
+            <article class="strength-card">
+                <div class="strength-card__num">04</div>
+                <h3 class="strength-card__title">Вкус к интерфейсу</h3>
+                <p class="strength-card__text">
+                    Мне важны визуал, типографика и плавность — поэтому я делаю UI аккуратно и современно.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="about-cta reveal-on-scroll">
+    <div class="container">
+        <div class="about-cta__card">
+            <div>
+                <p class="section-kicker">Контакт</p>
+                <h2 class="section-title">Хочешь обсудить задачу?</h2>
+                <p class="about-cta__text">
+                    Напиши — я быстро отвечу и помогу сформулировать решение.
+                </p>
+            </div>
+
+            <div class="about-cta__actions">
+                <a href="{{ url_for('main.contact') }}" class="btn btn--primary">Перейти в контакты</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

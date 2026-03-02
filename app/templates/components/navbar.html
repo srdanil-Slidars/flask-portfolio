@@ -1,0 +1,22 @@
+<header class="navbar">
+    <div class="container navbar__inner">
+        <a href="{{ url_for('main.index') }}" class="navbar__brand">
+    <img
+        class="navbar__logo"
+        src="{{ url_for('static', filename='images/icons/image.png') }}"
+        alt="Logo"
+        width="28"
+        height="28"
+        loading="eager"
+    >
+            <span class="navbar__brand-text">Flask Portfolio</span>
+        </a>
+
+        <nav class="nav">
+            <a href="{{ url_for('main.index') }}" class="{% if request.endpoint == 'main.index' %}is-active{% endif %}">Главная</a>
+            <a href="{{ url_for('main.about') }}" class="{% if request.endpoint == 'main.about' %}is-active{% endif %}">Обо мне</a>
+            <a href="{{ url_for('main.projects') }}" class="{% if request.endpoint == 'main.projects' %}is-active{% endif %}">Проекты</a>
+            <a href="{{ url_for('main.contact') }}" class="{% if request.endpoint == 'main.contact' %}is-active{% endif %}">Контакты</a>
+        </nav>
+    </div>
+</header>

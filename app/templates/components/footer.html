@@ -1,0 +1,36 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="site-footer__grid">
+            <div class="site-footer__brand">
+                <a href="{{ url_for('main.index') }}" class="site-footer__logo">Danil Sadykov</a>
+                <p class="site-footer__text">
+                    Молодой разработчик. Создаю современные digital-решения:
+                    Telegram-боты, автоматизацию, AI-интеграции и проекты с вниманием к деталям.
+                </p>
+            </div>
+
+            <div class="site-footer__column">
+                <h3 class="site-footer__title">Навигация</h3>
+                <nav class="site-footer__nav">
+                    <a href="{{ url_for('main.index') }}">Главная</a>
+                    <a href="{{ url_for('main.about') }}">Обо мне</a>
+                    <a href="{{ url_for('main.projects') }}">Проекты</a>
+                    <a href="{{ url_for('main.contact') }}">Контакты</a>
+                </nav>
+            </div>
+
+            <div class="site-footer__column">
+                <h3 class="site-footer__title">Связь</h3>
+                <div class="site-footer__links">
+                    <a href="https://t.me/Slidars" target="_blank" rel="noopener noreferrer">
+                        @Slidars
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <p>© 2026 Danil Sadykov. Все права защищены.</p>
+        </div>
+    </div>
+</footer>

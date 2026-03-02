@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Проекты | Flask Portfolio{% endblock %}
+
+{% block content %}
+<section class="projects-hero reveal-on-scroll">
+    <div class="projects-hero__background">
+        <div class="projects-hero__glow projects-hero__glow--one"></div>
+        <div class="projects-hero__glow projects-hero__glow--two"></div>
+    </div>
+
+    <div class="container projects-hero__layout">
+        <div class="projects-hero__content">
+            <p class="section-kicker">Проекты</p>
+
+            <h1 class="section-title">
+                Направления и кейсы,
+                в которых я уже развиваюсь
+            </h1>
+
+            <p class="projects-hero__text">
+                Здесь представлена не только витрина проектов, но и ключевые
+                направления, с которыми я уже работал на практике: Telegram-боты,
+                автоматизация, AI и computer vision. Даже без публичных репозиториев
+                я показываю свой реальный вектор развития и сильные стороны.
+            </p>
+        </div>
+
+        <div class="projects-hero__panel">
+            <div class="projects-summary-card">
+                <div class="projects-summary-card__label">Текущий формат</div>
+                <h2 class="projects-summary-card__title">Portfolio Showcase</h2>
+                <p class="projects-summary-card__text">
+                    Пока здесь собраны направления, опыт и типы решений.
+                    Позже эта страница легко расширится до полноценных кейсов
+                    с подробным описанием каждого проекта.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects-showcase reveal-on-scroll">
+    <div class="container">
+        <div class="projects-showcase__grid">
+            <article class="showcase-card">
+                <div class="showcase-card__top">
+                    <span class="showcase-card__badge">01</span>
+                    <span class="showcase-card__status">Опыт</span>
+                </div>
+
+                <h2 class="showcase-card__title">Telegram-боты</h2>
+
+                <p class="showcase-card__text">
+                    Разработка Telegram-ботов для автоматизации, обработки команд,
+                    взаимодействия с пользователями, уведомлений и построения
+                    удобных сценариев работы. Это одно из направлений, где у меня
+                    уже есть практический опыт и реальные задачи.
+                </p>
+
+                <div class="showcase-card__tags">
+                    <span>Python</span>
+                    <span>Bot API</span>
+                    <span>Automation</span>
+                    <span>UX Logic</span>
+                </div>
+            </article>
+
+            <article class="showcase-card">
+                <div class="showcase-card__top">
+                    <span class="showcase-card__badge">02</span>
+                    <span class="showcase-card__status">Развитие</span>
+                </div>
+
+                <h2 class="showcase-card__title">Автоматизация процессов</h2>
+
+                <p class="showcase-card__text">
+                    Создание решений, которые снимают рутину, ускоряют рабочие
+                    процессы и превращают повторяющиеся действия в удобные
+                    цифровые инструменты. Мне нравится делать практичные вещи,
+                    которые реально экономят время и усилия.
+                </p>
+
+                <div class="showcase-card__tags">
+                    <span>Scripts</span>
+                    <span>Workflows</span>
+                    <span>Efficiency</span>
+                    <span>Tools</span>
+                </div>
+            </article>
+
+            <article class="showcase-card">
+                <div class="showcase-card__top">
+                    <span class="showcase-card__badge">03</span>
+                    <span class="showcase-card__status">Private Case</span>
+                </div>
+
+                <h2 class="showcase-card__title">AI / Computer Vision</h2>
+
+                <p class="showcase-card__text">
+                    Работа с более сложными решениями, где используются элементы
+                    искусственного интеллекта, обработка данных и задачи,
+                    связанные с компьютерным зрением. Это направление особенно
+                    интересно мне как путь к более сильным и современным проектам.
+                </p>
+
+                <div class="showcase-card__tags">
+                    <span>AI</span>
+                    <span>CV</span>
+                    <span>Data</span>
+                    <span>Smart Systems</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="projects-cta reveal-on-scroll">
+    <div class="container">
+        <div class="projects-cta__card">
+            <div class="projects-cta__content">
+                <p class="section-kicker">Следующий шаг</p>
+                <h2 class="section-title">
+                    Готов обсудить идею,
+                    задачу или сотрудничество
+                </h2>
+                <p class="projects-cta__text">
+                    Если тебе нужен молодой и мотивированный разработчик
+                    для интересного digital-проекта, автоматизации или бота —
+                    можно связаться со мной напрямую.
+                </p>
+            </div>
+
+            <div class="projects-cta__actions">
+                <a href="{{ url_for('main.contact') }}" class="btn btn--primary">Перейти в контакты</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

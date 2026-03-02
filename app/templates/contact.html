@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Контакты | Flask Portfolio{% endblock %}
+
+{% block content %}
+<section class="contact-page reveal-on-scroll">
+    <div class="container contact-page__layout">
+        <div class="contact-page__content">
+            <p class="section-kicker">Контакты</p>
+
+            <h1 class="section-title">
+                Давай обсудим идею,
+                проект или сотрудничество
+            </h1>
+
+            <p class="contact-page__text">
+                Если тебе нужен разработчик для интересного проекта,
+                автоматизации, Telegram-бота или digital-решения —
+                можно связаться со мной напрямую.
+            </p>
+
+            <div class="contact-page__actions">
+                <a href="https://t.me/Slidars" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                    Написать в Telegram
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-page__card">
+            <div class="contact-info-card">
+                <div class="contact-info-card__label">Основной способ связи</div>
+
+                <h2 class="contact-info-card__title">Telegram</h2>
+
+                <p class="contact-info-card__text">
+                    Пока здесь стоит временный username.
+                    Позже ты просто заменишь его на свой.
+                </p>
+
+                <a
+                    class="contact-info-card__link"
+                    href="https://t.me/Slidars"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    @Slidars
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

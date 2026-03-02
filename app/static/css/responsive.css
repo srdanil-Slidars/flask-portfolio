@@ -1,0 +1,357 @@
+@media (max-width: 992px) {
+    .about-preview {
+        padding: 90px 0;
+    }
+
+    .about-preview__layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .section-title {
+        font-size: clamp(2rem, 7vw, 3rem);
+    }
+}
+
+
+@media (max-width: 992px) {
+    .hero__layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .hero__panel {
+        justify-content: flex-start;
+    }
+
+    .hero-card {
+        max-width: 100%;
+    }
+
+    .hero__title {
+        font-size: clamp(2.4rem, 8vw, 4.5rem);
+    }
+
+    .contact-page {
+        padding: 90px 0;
+    }
+
+    .contact-page__layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .contact-page__card {
+        justify-content: flex-start;
+    }
+
+    .featured-projects {
+        padding: 90px 0;
+    }
+
+    .featured-projects__head {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 32px;
+    }
+
+    .featured-projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+        .projects-hero {
+        padding: 90px 0 60px;
+    }
+
+    .projects-hero__layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .projects-hero__panel {
+        justify-content: flex-start;
+    }
+
+    .projects-showcase {
+        padding: 30px 0 90px;
+    }
+
+    .projects-showcase__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-cta {
+        padding: 0 0 90px;
+    }
+
+    .projects-cta__card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .projects-cta__actions {
+        justify-content: flex-start;
+    }
+
+    .skills-preview {
+        padding: 90px 0;
+    }
+
+    .skills-preview__layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .why-me {
+        padding: 90px 0;
+    }
+
+    .why-me__head {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 32px;
+    }
+
+    .why-me__grid {
+        grid-template-columns: 1fr;
+    }
+
+        .home-cta {
+        padding: 0 0 90px;
+    }
+
+    .home-cta__card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .home-cta__actions {
+        justify-content: flex-start;
+    }
+
+    .site-footer__grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+        .about-hero {
+        padding: 90px 0 60px;
+    }
+
+    .about-hero__layout {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .about-profile-card {
+        margin-left: 0;
+        max-width: 520px;
+    }
+
+    .about-story,
+    .about-strengths,
+    .about-cta {
+        padding: 90px 0;
+    }
+
+    .about-story__head {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .about-strengths__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cta__card {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cta__actions {
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar__inner {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 14px 0;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .hero__title {
+        font-size: clamp(2rem, 10vw, 3.2rem);
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-card {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .page-section {
+        padding: 72px 0;
+    }
+
+        .about-preview {
+        padding: 72px 0;
+    }
+
+    .about-preview__text {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .about-feature-card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .contact-page {
+        padding: 72px 0;
+    }
+
+    .contact-info-card {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .contact-page__text {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .featured-projects {
+        padding: 72px 0;
+    }
+
+    .project-card {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .featured-projects__intro {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+        .projects-hero {
+        padding: 72px 0 48px;
+    }
+
+    .projects-summary-card,
+    .showcase-card,
+    .projects-cta__card {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .projects-showcase {
+        padding: 24px 0 72px;
+    }
+
+    .projects-cta {
+        padding: 0 0 72px;
+    }
+
+    .projects-hero__text,
+    .projects-cta__text {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+        .skills-preview {
+        padding: 72px 0;
+    }
+
+    .skills-preview__text {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .skill-info-card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .why-me {
+        padding: 72px 0;
+    }
+
+    .why-card {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .why-me__intro {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+        .home-cta {
+        padding: 0 0 72px;
+    }
+
+    .home-cta__card {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .home-cta__text {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .site-footer {
+        padding: 32px 0 24px;
+    }
+
+    .about-hero {
+        padding: 72px 0 48px;
+    }
+
+    .about-hero__actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-profile-card,
+    .timeline-item,
+    .strength-card,
+    .about-cta__card {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .about-story,
+    .about-strengths,
+    .about-cta {
+        padding: 72px 0;
+    }
+
+    .about-hero__text {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+}
