@@ -4,58 +4,51 @@
 
 {% block content %}
 <section class="contact-page reveal-on-scroll">
-    <div class="container contact-page__layout">
-        <div class="contact-page__content">
-            <p class="section-kicker">Контакты</p>
+  <div class="container contact-page__layout">
 
-            <h1 class="section-title">
-                Давай обсудим идею,
-                проект или сотрудничество
-            </h1>
+    <!-- ЛЕВАЯ КОЛОНКА -->
+    <div class="contact-page__content">
+      <p class="section-kicker">Контакты</p>
 
-            <p class="contact-page__text">
-                Если тебе нужен разработчик для интересного проекта,
-                автоматизации, Telegram-бота или digital-решения —
-                можно связаться со мной напрямую.
-            </p>
+      <h1 class="section-title">
+        Давай обсудим идею,
+        проект или сотрудничество
+      </h1>
 
-            <div class="contact-page__actions">
-                <a href="https://t.me/Slidars" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-                    Написать в Telegram
-                </a>
-            </div>
-        </div>
+      <p class="contact-page__text">
+        Если тебе нужен разработчик для интересного проекта,
+        автоматизации, Telegram-бота или digital-решения —
+        можно связаться со мной напрямую.
+      </p>
 
-        <div class="contact-page__card">
-            <div class="contact-info-card">
-                <div class="contact-info-card__label">Основной способ связи</div>
-
-                <h2 class="contact-info-card__title">Telegram</h2>
-
-                <a
-                    class="contact-info-card__link"
-                    href="https://t.me/Slidars"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    @Slidars
-                </a>
-            </div>
-        </div>
-
-        <div class="contact-card">
-            <div class="contact-card__icon">
-                ✉️
-            </div>
-
-            <div class="contact-card__content">
-                <h3>Email</h3>
-                <a href="mailto:srdanil@mailru" class="contact-card__link">
-                    srdanil@mail.ru
-                </a>
-            </div>
-        </div>
-
+      <div class="contact-page__actions">
+        <a href="https://t.me/Slidars" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+          Написать в Telegram
+        </a>
+      </div>
     </div>
+
+    <!-- ПРАВАЯ КОЛОНКА (2 карточки одна под другой) -->
+    <div class="contact-page__side">
+      <div class="contact-info-card">
+        <div class="contact-info-card__label">Основной способ связи</div>
+        <h2 class="contact-info-card__title">Telegram</h2>
+        <a class="contact-info-card__link" href="https://t.me/Slidars" target="_blank" rel="noopener noreferrer">
+          @Slidars
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card__icon">✉️</div>
+        <div class="contact-card__content">
+          <h3>Email</h3>
+          <a href="mailto:srdanil@mail.ru" class="contact-card__link">
+            srdanil@mail.ru
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 {% endblock %}
