@@ -1765,7 +1765,7 @@ body.cursor-hover .custom-cursor-ring {
 }
 
 .contact-page__side{
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+    display: grid;
+    gap: 18px;
+    align-content: start;
 }
